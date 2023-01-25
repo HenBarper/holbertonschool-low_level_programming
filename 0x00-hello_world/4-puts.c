@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print message using 'puts'
+ * main - Entry point
  *
  * return 0
  *
