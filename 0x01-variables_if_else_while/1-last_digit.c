@@ -20,7 +20,7 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	string theMessage = "";
+	char theMessage[30] = "";
 	int lastDigit = n % 10;
 	if (lastDigit > 5)
 	{
