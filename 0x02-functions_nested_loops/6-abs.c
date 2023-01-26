@@ -8,7 +8,7 @@
 
 /**
  * _abs - print sign of number
- * 
+ * @n: a variable number
  * Description: absolute value
  * Return: 1, 0, or -1
  */
