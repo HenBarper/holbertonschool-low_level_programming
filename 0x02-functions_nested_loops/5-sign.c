@@ -18,16 +18,16 @@ int print_sign(int c)
 	if (c > 0)
 	{
 		return (1);
-		printf("+");
+		printf("+, 1");
 	}
 	else if (c == 0)
 	{
 		return (0);
-		printf("0");
+		printf("0, 0");
 	}
 	else
 	{
 		return (-1);
-		printf("-");
+		printf("-, /");
 	}
 }
