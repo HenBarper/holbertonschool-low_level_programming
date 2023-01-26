@@ -8,7 +8,7 @@
 
 /**
  * jack_bauer - print clock minutes
- * @n: a variable number
+ * 
  * Description: clock
  * Return: Always 0
  */
