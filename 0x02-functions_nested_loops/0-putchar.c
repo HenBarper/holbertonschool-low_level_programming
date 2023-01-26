@@ -13,6 +13,6 @@
 
 int PrintChar(void)
 {
-	printf("_putchar");
+	printf("_putchar\n");
 	return (0);
 }

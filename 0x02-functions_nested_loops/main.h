@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-int PrintChar(void);
+int PrintChar(char c);
 #endif
 
