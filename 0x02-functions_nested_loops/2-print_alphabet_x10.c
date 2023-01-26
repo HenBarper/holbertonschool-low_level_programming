@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - 10x alphabet
+ * print_alphabet_x10 - 10x alphabet
  * Description: Prints alphabet ten times then new line
  * Return: Nothing.
  */
