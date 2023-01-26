@@ -8,6 +8,7 @@
 
 /**
  * _islower - check for lower case letters
+ * @c: an input character
  * Description: Check that case
  * Return: Nothing.
  */
