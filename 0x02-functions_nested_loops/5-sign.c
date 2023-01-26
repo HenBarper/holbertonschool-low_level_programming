@@ -8,7 +8,7 @@
 
 /**
  * print_sign - print sign of number
- * @c: an input character
+ * @n: an input character
  * Description: print sign
  * Return: 1, 0, or -1
  */
