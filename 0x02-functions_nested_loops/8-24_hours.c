@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - print clock minutes 
+ * jack_bauer - print clock minutes
  * Description: clock
  * Return: Always 0
  */
