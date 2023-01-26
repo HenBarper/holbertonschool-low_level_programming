@@ -12,7 +12,7 @@
  * Return: Nothing.
  */
 
-int _isLower(int c)
+int _islower(int c)
 {
 	if (c > 96)
 	{
