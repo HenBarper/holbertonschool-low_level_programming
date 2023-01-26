@@ -3,7 +3,7 @@
  * Auth: Ben Harper
  */
 
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - _putchar
