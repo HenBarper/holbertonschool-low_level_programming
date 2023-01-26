@@ -14,7 +14,7 @@
 
 int _isLower(int c)
 {
-	if (islower(c) == true)
+	if (c > 96)
 	{
 		return (1);
 	}
