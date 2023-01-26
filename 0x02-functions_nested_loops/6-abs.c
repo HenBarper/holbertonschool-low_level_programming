@@ -13,7 +13,7 @@
  * Return: 1, 0, or -1
  */
 
-int abs(int n)
+int _abs(int n)
 {
 	if (n >= 0)
 	{
