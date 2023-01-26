@@ -7,9 +7,9 @@
 #include "main.h"
 
 /**
- * main - insomnia
- *
- * Return: Always 0 (Success)
+ * print_alphabet - Insomnia
+ * Description: Prints alphabet then new line
+ * Return: Nothing.
  */
 
 void print_alphabet(void)
