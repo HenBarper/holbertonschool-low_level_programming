@@ -16,14 +16,12 @@
 
 void print_to_98(int n)
 {
-	int c;
-
 	if (n < 99)
 	{
-		for ( c = n ; c <= 98 ; c++)
+		for ( n ; n <= 98 ; c++)
 		{
-			_putchar((c) + '0');
-			if (c < 98)
+			_putchar((n) + '0');
+			if (n < 98)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -32,9 +30,9 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for ( c = n ; c >= 98 ; c--)
+		for ( n ; n >= 98 ; n--)
 		{
-			_putchar((c) + '0');
+			_putchar((n) + '0');
 			if(c > 98)
 			{
 				_putchar(',');
