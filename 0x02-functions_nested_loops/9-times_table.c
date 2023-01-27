@@ -23,8 +23,10 @@ void times_table(void)
 		for (num2 = '0' ; num2 <= '9' ; num2++)
 		{
 			result = num1 * num2;
+
 			if (result < 10)
 			{
+				_putchar(' ');
 				_putchar((result) + '0');
 			}
 			else
@@ -36,6 +38,5 @@ void times_table(void)
 			_putchar(' ');
 		}
 		_putchar('\n');
-		num1 = 0;
 	}	
 }
