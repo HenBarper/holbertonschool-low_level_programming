@@ -22,7 +22,7 @@ void print_to_98(int n)
 	{
 		for ( c = n ; c <= 98 ; c++)
 		{
-			_putchar(c + '0');
+			_putchar((c) + '0');
 			if (c < 98)
 			{
 				_putchar(',');
@@ -34,7 +34,7 @@ void print_to_98(int n)
 	{
 		for ( c = n ; c >= 98 ; c--)
 		{
-			_putchar(c + '0');
+			_putchar((c) + '0');
 			if(c > 98)
 			{
 				_putchar(',');
