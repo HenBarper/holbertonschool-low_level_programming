@@ -30,11 +30,12 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(result);
+				_putchar(result + '0');
 			}
 			_putchar(',');
 			_putchar(' ');
 		}
+		_putchar('\n');
 		num1 = 0;
 	}	
 }
