@@ -18,7 +18,7 @@ void print_to_98(int n)
 {
 	if (n < 99)
 	{
-		for (; n <= 98 ; c++)
+		for (; n <= 98 ; n++)
 		{
 			_putchar((n) + '0');
 			if (n < 98)
