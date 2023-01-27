@@ -8,6 +8,8 @@
 
 /**
  * add - add two numbers
+ * @a:input char
+ * @b: inout char
  * Description: add two numbers
  * Return: Always 0
  */
