@@ -26,7 +26,7 @@ void times_table(void)
 
 			if (result == 0)
 			{
-				if(num2 > 0)
+				if (num2 > 0)
 				{
 					_putchar(' ');
 				}
