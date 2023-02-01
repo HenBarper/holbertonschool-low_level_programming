@@ -16,7 +16,7 @@ int main(void)
 {
 	int counter;
 
-	for (counter = 1 ; counter <= 100 ; counter++)
+	for (counter = 1 ; counter < 100 ; counter++)
 	{
 		if ((counter % 3 == 0) && (counter % 5 == 0))
 		{
@@ -35,7 +35,7 @@ int main(void)
 			printf("%d ", counter);
 		}
 	}
-	printf("\n");
+	printf("Buzz\n");
 
 	return (0);
 }
