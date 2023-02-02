@@ -19,7 +19,7 @@ int _strlen(char *s)
 
 	for (letter = message[letter_num] ; letter != '\0' ; letter = message[letter_num])
 	{
-		leter_num++;
+		letter_num++;
 	}
 
 	return (letter_num);
