@@ -15,7 +15,6 @@
 void print_triangle(int size)
 {
 	int row;
-	int column;
 	int spaces;
 	int hTags;
 
@@ -23,16 +22,13 @@ void print_triangle(int size)
 	{
 		for (row = 1 ; row <= size ; row++)
 		{
-			for (column = 1 ; column <= size ; column++)
+			for (spaces = (size - row) ; spaces > 0 ; spaces--)
 			{
-				for (spaces = (size - column) ; spaces > 0 ; spaces--)
-				{
-					_putchar(' ');
-				}
-				for (hTags = 1 ; hTags <= size ; hTags++)
-				{
-					_putchar('#');
-				}
+				_putchar(' ');
+			}
+			for (hTags = 1 ; hTags <= row ; hTags++)
+			{
+				_putchar('#');
 			}
 			_putchar('\n');
 		}
