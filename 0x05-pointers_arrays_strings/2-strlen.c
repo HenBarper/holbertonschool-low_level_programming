@@ -13,14 +13,11 @@
 
 int _strlen(char *s)
 {
-	char message = *s;
-	char letter;
-	int letter_num = 0;
+	int length = 0;
 
-	for (letter = message[letter_num] ; letter != '\0' ; letter = message[letter_num])
+	while (s[length] != '\0')
 	{
-		letter_num++;
+		length++;
 	}
-
-	return (letter_num);
+	return (length);
 }
