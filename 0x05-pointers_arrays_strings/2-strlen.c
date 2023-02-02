@@ -11,7 +11,7 @@
  * Return: string length
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	strlen(*s);
 }
