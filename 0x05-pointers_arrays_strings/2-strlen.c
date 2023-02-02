@@ -4,6 +4,7 @@
  */
 
 #include "main.h"
+#include <string.h>
 
 /**
  * _strlen - return string length
