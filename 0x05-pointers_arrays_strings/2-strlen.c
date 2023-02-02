@@ -13,7 +13,7 @@
 
 int _strlen(char *s)
 {
-	char message[] = s;
+	char message = s;
 	char letter;
 	int letter_num = 0;
 
