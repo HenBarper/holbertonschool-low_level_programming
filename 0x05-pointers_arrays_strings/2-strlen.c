@@ -4,7 +4,6 @@
  */
 
 #include "main.h"
-#include <string.h>
 
 /**
  * _strlen - return string length
@@ -14,5 +13,14 @@
 
 int _strlen(char *s)
 {
-	strlen(s);
+	char message[] = s;
+	char letter;
+	int letter_num = 0;
+
+	for (letter = message[letter_num] ; letter != '\0' ; letter = message[letter_num])
+	{
+		leter_num++;
+	}
+
+	return (letter_num);
 }
