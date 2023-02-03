@@ -1,17 +1,17 @@
 /*
- * File 3-puts.c
+ * File 6-puts2.c
  * Auth: Ben Harper
  */
 
 #include "main.h"
 
 /**
- * _puts - print string + new line to "stdout"
- * @str: strin value
+ * puts2 - print every other char of a string + new line to "stdout"
+ * @str: string value
  * Return: nothing
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
