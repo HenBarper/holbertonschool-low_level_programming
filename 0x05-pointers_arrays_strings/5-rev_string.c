@@ -14,34 +14,23 @@
 void rev_string(char *s)
 {
 	int length = 0;
+	int counter;
+	char letter;
 
 	while (s[length] != '\0')
 	{
 		length++;
 	}
 
-	length++;
-
-	char message[length];
-	int i;
-	int c = 0;
-
 	length--;
 
-	for (i = length ; i <= 0 ; i--)
+	for (counter = 0 ; counter < length ; counter ++)
 	{
-		message[c] = s[length];
+		letter = s[length];
+		s[length] = s[counter];
+		s[counter] = letter;
+		length--;
 	}
 
-	length++;
-
-	message[length] = '\0';
-
-	int j;
-
-	for (j = 0 ; j <= length ; j++)
-	{
-		s[j] = message[j];
-	}
 	_putchar('\n');
 }
