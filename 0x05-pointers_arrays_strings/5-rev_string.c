@@ -24,7 +24,7 @@ void rev_string(char *s)
 
 	length--;
 
-	for (counter = 0 ; counter < length ; counter ++)
+	for (counter = 0 ; counter < length ; counter++)
 	{
 		letter = s[length];
 		s[length] = s[counter];
