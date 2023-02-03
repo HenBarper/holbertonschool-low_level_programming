@@ -31,6 +31,4 @@ void rev_string(char *s)
 		s[counter] = letter;
 		length--;
 	}
-
-	_putchar('\n');
 }
