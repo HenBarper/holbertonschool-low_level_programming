@@ -20,10 +20,12 @@ void print_rev(char *s)
 		length++;
 	}
 
+	length--;
+
 	while (length >= 0)
 	{
-		length--;
 		_putchar(s[length]);
+		length--;
 	}
 	_putchar('\n');
 }
