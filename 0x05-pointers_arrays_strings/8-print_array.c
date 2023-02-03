@@ -32,9 +32,5 @@ void print_array(int *a, int n)
 			}
 		}
 	}
-	else
-	{
-		break;
-	}
 	_putchar('\n');
 }
