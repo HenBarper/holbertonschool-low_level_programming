@@ -6,8 +6,9 @@
 #include "main.h"
 
 /**
- * puts_array - print n elements of a string + new line to "stdout"
+ * print_array - print n elements of a string + new line to "stdout"
  * @n: input int
+ * @a: int pointer
  * Return: nothing
  */
 
@@ -32,5 +33,5 @@ void print_array(int *a, int n)
 			}
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
