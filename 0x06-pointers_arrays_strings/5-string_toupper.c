@@ -20,7 +20,6 @@ char *string_toupper(char *c)
 	{
 		length++;
 	}
-	length--;
 
 	for (counter = 0 ; counter < length ; counter++)
 	{
