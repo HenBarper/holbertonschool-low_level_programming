@@ -21,11 +21,13 @@ int _strcmp(char *s1, char *s2)
 	{
 		s1Length++;
 	}
+	s1Length--;
 
 	while (s2[s2Length] != '\0')
 	{
 		s2Length++;
 	}
+	s2Length--;
 
 	if (s1Length < s2Length)
 	{
