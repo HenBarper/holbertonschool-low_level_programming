@@ -31,4 +31,6 @@ char *string_toupper(char *c)
 			c[counter] = (char)temp;
 		}
 	}
+
+	return (c);
 }
