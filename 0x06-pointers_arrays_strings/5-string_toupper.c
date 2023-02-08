@@ -15,7 +15,6 @@ char *string_toupper(char *c)
 {
 	int length = 0;
 	int counter;
-	int temp;
 
 	while (c[length] != '\0')
 	{
@@ -25,10 +24,9 @@ char *string_toupper(char *c)
 
 	for (counter = 0 ; counter < length ; counter++)
 	{
-		if (((int)c[counter]) > 96 && ((int)c[counter]) < 123)
+		if ((c[counter]) > 96 && (c[counter]) < 123)
 		{
-			temp = ((int)c[counter]) - 32;
-			c[counter] = (char)temp;
+			c[counter] = (c[counter]) - 32;
 		}
 	}
 
