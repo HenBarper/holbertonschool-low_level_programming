@@ -17,10 +17,10 @@ void reverse_array(int *a, int n)
 	int temp;
 	int counter;
 
-	for (counter = 0 ; counter < n ; counter ++)
+	for (counter = 0 ; counter < n ; counter++)
 	{
-		temp = a[n-1];
-		a[n-1] = a[counter];
+		temp = a[n - 1];
+		a[n - 1] = a[counter];
 		a[counter] = temp;
 		n--;
 	}
