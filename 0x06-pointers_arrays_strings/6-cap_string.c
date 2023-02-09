@@ -24,6 +24,7 @@ char *cap_string(char *c)
 	{
 		length++;
 	}
+	length--;
 	for (counter = 0 ; counter < length ; counter++)
 	{
 		torf = 0;
