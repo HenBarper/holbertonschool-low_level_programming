@@ -1,4 +1,10 @@
-#include "holberton.h"
+#include <unistd.h>
+
+/**
+ * _strlen - counts length of string
+ * @s: input char
+ * Return: length
+ */
 
 int _strlen(char *s)
 {
