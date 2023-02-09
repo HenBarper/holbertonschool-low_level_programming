@@ -13,15 +13,14 @@
 
 char *cap_string(char *c)
 {
-	int length = _strlen(c);
+	int length;
 	int counter;
 	int i;
 	int torf = 0;
-	char sps[13];
 	char prevCh = c[0];
+	char sps[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
 
-	sps = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
-
+	length = _strlen(c);
 	for (counter = 0 ; counter < length ; counter++)
 	{
 		torf = 0;
