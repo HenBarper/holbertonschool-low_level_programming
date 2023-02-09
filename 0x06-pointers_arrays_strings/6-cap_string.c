@@ -20,7 +20,10 @@ char *cap_string(char *c)
 	char prevCh = c[0];
 	char sps[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
 
-	length = _strlen(c);
+	while (c[length] != '\0')
+	{
+		length++;
+	}
 	for (counter = 0 ; counter < length ; counter++)
 	{
 		torf = 0;
