@@ -13,22 +13,28 @@
 
 char *cap_string(char *c)
 {
-	int length = 0;
+	int length = _strlen(c);
 	int counter;
-	char prvCh = c[0];
-
-	while (c[length] != '\0')
-	{
-		length++;
-	}
+	int i;
+	int torf = 0;
+	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+	char prevCh = c[0];
 
 	for (counter = 0 ; counter < length ; counter++)
 	{
+		torf = 0;
 		if (counter > 0)
 		{
 			prevCh = c[counter - 1];
 		}
-		if (prevCh == ',' || prevCh == ';' || prevCh == '.' || prevCh == '!' || prevCh == '"' || prevCh == '(' || prevCh == ')' || prevCh == '{' || prevCh == '}' || prevCh == ' ' || prevCh == '	' || prevCh == '\n')
+		for ( i = 0 ; i < 13 ; i++)
+		{
+			if (prevCh == seperators[i])
+			{
+				torf = 1;
+			}
+		}
+		if (torf == 1)
 		{
 			if ((c[counter]) > 96 && (c[counter]) < 123)
 			{
