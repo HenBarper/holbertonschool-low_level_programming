@@ -17,8 +17,10 @@ char *cap_string(char *c)
 	int counter;
 	int i;
 	int torf = 0;
-	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+	char sps[13];
 	char prevCh = c[0];
+
+	sps = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
 
 	for (counter = 0 ; counter < length ; counter++)
 	{
@@ -27,9 +29,9 @@ char *cap_string(char *c)
 		{
 			prevCh = c[counter - 1];
 		}
-		for ( i = 0 ; i < 13 ; i++)
+		for (i = 0 ; i < 13 ; i++)
 		{
-			if (prevCh == seperators[i])
+			if (prevCh == sps[i])
 			{
 				torf = 1;
 			}
