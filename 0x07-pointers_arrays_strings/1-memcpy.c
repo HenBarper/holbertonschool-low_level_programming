@@ -8,7 +8,7 @@
 /**
  * *_memcpy - copy memory area
  * @dest: destination
- * @src:source
+ * @src: source
  * @n: length
  * Return: a pointer to the copy location
  */
