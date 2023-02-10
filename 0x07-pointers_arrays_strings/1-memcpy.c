@@ -10,7 +10,7 @@
  * @dest: destination
  * @src:source
  * @n: length
- * Return: a character
+ * Return: a pointer to the copy location
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
