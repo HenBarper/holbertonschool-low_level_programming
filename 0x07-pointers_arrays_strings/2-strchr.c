@@ -12,7 +12,7 @@
  * Return: a pointer to the first occurance to the character
  */
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	while (*s)
 	{
