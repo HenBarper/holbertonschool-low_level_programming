@@ -12,7 +12,7 @@
  * Return: # of bytes from initial segment
  */
 
-char *_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
 	int counter = 0;
