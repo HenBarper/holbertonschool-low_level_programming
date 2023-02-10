@@ -21,4 +21,6 @@ char *_memcpy(char *dest, Char *src, unsigned int n)
 	{
 		dest[i] = src[i];
 	}
+
+	return (dest);
 }
