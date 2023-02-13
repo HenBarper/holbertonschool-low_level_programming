@@ -46,5 +46,12 @@ char *_strstr(char *haystack, char *needle)
 		hay_counter++;
 	}
 	hay_counter--;
-	return (&haystack[start]);
+	if (torf == 0)
+	{
+		return ('\0');
+	}
+	else
+	{
+		return (&haystack[start]);
+	}
 }
