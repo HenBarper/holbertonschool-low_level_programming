@@ -24,7 +24,6 @@ char *_strstr(char *haystack, char *needle)
 	{
 		needle_length++;
 	}
-
 	while (haystack[hay_counter])
 	{
 		if (haystack[hay_counter] == needle[needle_counter]
@@ -52,11 +51,7 @@ char *_strstr(char *haystack, char *needle)
 	}
 	hay_counter--;
 	if (torf == 0)
-	{
 		return ('\0');
-	}
 	else
-	{
 		return (&haystack[start]);
-	}
 }
