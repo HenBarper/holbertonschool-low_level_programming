@@ -19,11 +19,11 @@ char *_strstr(char *haystack, char *needle)
 	int start = 0;
 	int torf = 0;
 
-	while(haystack[hay_counter])
+	while (haystack[hay_counter])
 	{
 		if (haystack[hay_counter] == needle[needle_counter])
 		{
-			if(torf == 0)
+			if (torf == 0)
 			{
 				torf = 1;
 				start = hay_counter;
