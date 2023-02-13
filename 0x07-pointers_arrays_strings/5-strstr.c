@@ -14,44 +14,21 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int hay_counter = 0;
-	int needle_counter = 0;
-	int needle_length = 0;
-	int start = 0;
-	int torf = 0;
+	char *startn = needle, *starth = haystack;
 
-	while (needle[needle_length] != '\0')
+	while (*haystack)
 	{
-		needle_length++;
-	}
+		starth = haystack;
+		needle = startn;
+		while (*haystack == *needle)
+		{
+			haystack++;
+			needle++;
+		}
 
-	while (haystack[hay_counter])
-	{
-		if (haystack[hay_counter] == needle[needle_counter]
-				&& needle[needle_counter] != '\0')
-		{
-			if (torf == 0)
-			{
-				torf = 1;
-				start = hay_counter;
-			}
-			needle_counter++;
-		}
-		else if (haystack[hay_counter] != needle[needle_counter]
-				&& needle_counter != needle_length)
-		{
-			torf = 0;
-			start = 0;
-		}
-		hay_counter++;
+		if (*needle == '\0')
+			return (haystack);
+		haystack = starth + 1;
 	}
-	hay_counter--;
-	if (torf == 0)
-	{
-		return ('\0');
-	}
-	else
-	{
-		return (&haystack[start]);
-	}
+	return (NULL);
 }
