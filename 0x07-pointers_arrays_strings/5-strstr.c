@@ -48,7 +48,7 @@ char *_strstr(char *haystack, char *needle)
 	hay_counter--;
 	if (torf == 0)
 	{
-		return ('\0');
+		return (NULL);
 	}
 	else
 	{
