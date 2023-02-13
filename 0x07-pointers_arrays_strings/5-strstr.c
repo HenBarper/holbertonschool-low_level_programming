@@ -37,6 +37,11 @@ char *_strstr(char *haystack, char *needle)
 			}
 			needle_counter++;
 		}
+		else if (haystack[hay_counter] == needle[needle_counter - 1]
+				&& needle[needle_counter] != '\0')
+		{
+			start = hay_counter;
+		}
 		else if (haystack[hay_counter] != needle[needle_counter]
 				&& needle_counter != needle_length)
 		{
