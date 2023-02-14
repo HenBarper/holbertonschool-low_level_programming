@@ -20,9 +20,9 @@ char *_strstr(char *haystack, char *needle)
 	int torf = 0;
 
 	while (needle[needle_length] != '\0')
-	{
 		needle_length++;
-	}
+	if (needle_length == 0)
+		return (haystack);
 	while (haystack[hay_counter])
 	{
 		if (haystack[hay_counter] == needle[needle_counter]
@@ -48,7 +48,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		hay_counter++;
 	}
-	/*hay_counter--;*/
+	hay_counter--;
 	if (torf == 0)
 		return ('\0');
 	else
