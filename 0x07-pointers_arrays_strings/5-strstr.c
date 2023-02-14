@@ -45,6 +45,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			torf = 0;
 			start = 0;
+			needle_counter = 0;
 		}
 		hay_counter++;
 	}
