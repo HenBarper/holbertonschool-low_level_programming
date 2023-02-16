@@ -32,6 +32,7 @@ int is_prime_number(int n)
  * @n: int
  * @d: divisor
  * Return: the value
+ */
 
 int prime_check(int n, int d)
 {
