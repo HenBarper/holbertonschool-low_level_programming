@@ -28,7 +28,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 
-	return (sqrt(n, 1));
+	return (sqrt_check(n, 1));
 }
 
 /**
@@ -50,6 +50,6 @@ int sqrt_check(int n, int f)
 	}
 	else
 	{
-		sqrt(n, f + 1);
+		sqrt_check(n, f + 1);
 	}
 }
