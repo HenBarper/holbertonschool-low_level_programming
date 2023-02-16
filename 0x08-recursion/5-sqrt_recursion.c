@@ -50,6 +50,6 @@ int sqrt_check(int n, int f)
 	}
 	else
 	{
-		sqrt_check(n, f + 1);
+		return (sqrt_check(n, f + 1));
 	}
 }
