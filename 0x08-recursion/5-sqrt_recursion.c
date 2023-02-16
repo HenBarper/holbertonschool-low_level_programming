@@ -5,7 +5,7 @@
 
 #include "main.h"
 #include <stdio.h>
-int sqrt(int n, int f);
+int sqrt_check(int n, int f);
 
 /**
  * _sqrt_recursion - return natural square root of n
@@ -32,13 +32,13 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt - increments a counter to check for matches
+ * sqrt_check - increments a counter to check for matches
  * @n: number
  * @f: factor
  * Return: the power value
  */
 
-int sqrt(int n, int f)
+int sqrt_check(int n, int f)
 {
 	if (f * f == n)
 	{
