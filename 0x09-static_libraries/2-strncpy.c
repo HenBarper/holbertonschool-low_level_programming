@@ -3,7 +3,7 @@
  * Auth: Ben Harper
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * *_strncpy - work like strncpy
