@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * _atoi - ???
+ * _atoi - ????
  * @s: string
  * Return: ???
  */
