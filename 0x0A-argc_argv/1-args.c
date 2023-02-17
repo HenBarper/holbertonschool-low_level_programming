@@ -15,8 +15,11 @@ int main(int argc, char *argv[])
 	while (argc--)
 	{
 		i++;
-		/*printf("%s\n", *argv++);*/
+		if (argv[0])
+		{
+			printf("%s\n", *argv++);
+		}
 	}
-	printf("%d\n", i);
+	/*printf("%d\n", i);*/
 	return (0);
 }
