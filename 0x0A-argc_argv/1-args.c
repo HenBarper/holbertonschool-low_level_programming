@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 			printf("%d\n", i);
 		}*/
 	}
+	i--;
 	if (argv[0])
 	{
 		printf("%d\n", i);
