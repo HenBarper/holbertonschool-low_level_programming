@@ -16,11 +16,14 @@ int main(int argc, char *argv[])
 	while (argc--)
 	{
 		i++;
-		if (argv[0])
+		/*if (argv[0])
 		{
-			printf("%s\n", *argv++);
-		}
+			printf("%d\n", i);
+		}*/
 	}
-	/*printf("%d\n", i);*/
+	if (argv[0])
+	{
+		printf("%d\n", i);
+	}
 	return (0);
 }
