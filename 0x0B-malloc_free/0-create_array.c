@@ -9,8 +9,8 @@
 
 /**
  * *create_array - create ar of chars, init w/ specfc char
- * @size - bytes
- * @c - char
+ * @size: bytes
+ * @c: char
  * Return: NULL or ptr to ar
  */
 
@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	char *p;
 	unsigned int i = 0;
 
-	if(size == 0)
+	if (size == 0 || size == '\0')
 	{
 		return ('\0');
 	}
