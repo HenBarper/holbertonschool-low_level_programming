@@ -4,6 +4,8 @@
  */
 
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * *create_array - create ar of chars, init w/ specfc char
@@ -14,8 +16,22 @@
 
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
+	char *p;
+	unsigned int i = 0;
+
+	if(size == 0)
 	{
 		return ('\0');
 	}
+	else
+	{
+		p = malloc(size * sizeof(char));
+
+		while (i < size)
+		{
+			p[i] = c;
+			i++;
+		}
+	}
+	return (p);
 }
