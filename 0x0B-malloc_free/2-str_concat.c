@@ -40,7 +40,10 @@ char *str_concat(char *s1, char *s2)
 		}
 		s2len++;
 	}
-
+	if (s2len == 0)
+	{
+		s1len++;
+	}
 	ar = malloc((s1len + s2len) * sizeof(char));
 	if (ar == NULL)
 	{
