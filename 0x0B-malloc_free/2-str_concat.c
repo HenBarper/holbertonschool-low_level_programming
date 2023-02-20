@@ -38,8 +38,8 @@ char *str_concat(char *s1, char *s2)
 		{
 			s2len++;
 		}
+		s2len++;
 	}
-	s2len++;
 
 	ar = malloc((s1len + s2len) * sizeof(char));
 	if (ar == NULL)
