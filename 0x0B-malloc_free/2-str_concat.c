@@ -21,23 +21,19 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	char *ar;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	if (s1 != NULL)
 	{
 		while (s1[s1len] != '\0')
-		{
 			s1len++;
-		}
 	}
 	if (s2 != NULL)
 	{
 		while (s2[s2len] != '\0')
-		{
 			s2len++;
-		}
 		s2len++;
 	}
 	if (s2len == 0)
