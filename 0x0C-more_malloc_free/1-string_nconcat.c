@@ -20,16 +20,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *newstr;
 	unsigned int s1len = 0;
 	unsigned int s2len = 0;
-	int i;
+	unsigned int i;
 
 	if (s1 == NULL)
-		s1 == "";
+		s1 = "";
 
 	while (s1[s1len] != 0)
 		s1len++;
 
 	if (s2 == NULL)
-		s2 == "";
+		s2 = "";
 
 	while (s2[s2len] != 0)
 		s2len++;
