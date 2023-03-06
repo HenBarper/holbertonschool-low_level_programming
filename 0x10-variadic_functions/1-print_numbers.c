@@ -6,6 +6,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_numbers - print nums + new line
@@ -18,7 +19,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list prms;
-	int i;
+	unsigned int i;
 	int num;
 
 	va_start(prms, n);
