@@ -28,20 +28,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(prms, char*);
 		if (str == NULL)
-			str = "(nil)";
-
-		if (separator != NULL && i < (n - 1))
-		{
-			printf("%s%s", str, separator);
-		}
-		else if (separator == NULL && i < (n - 1))
-		{
-			printf("%s ", str);
-		}
+			printf("(nil)");
 		else
-		{
 			printf("%s", str);
-		}
+		if (separator == NULL)
+			continue;
+		if (i < n - 1)
+			printf("%s", separator);
 	}
 	printf("\n");
 
