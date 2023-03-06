@@ -4,13 +4,13 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
  * sum_them_all - return sum of params
  * @n: number of params
+ * @...: other params
  * Return: result of eq
  */
 
@@ -27,7 +27,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0 ; i < n ; i++)
 	{
-		result += va_arg(addparams, unsigned int);
+		result += va_arg(addparams, int);
 	}
 
 	va_end(addparams);
