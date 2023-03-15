@@ -1,11 +1,10 @@
 #include "lists.h"
-#include <stdio>
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_list - print the elements of a list_t list
  * @h: list var
- * Description: prints the elements of a list
  * Return: the number of nodes
  */
 
