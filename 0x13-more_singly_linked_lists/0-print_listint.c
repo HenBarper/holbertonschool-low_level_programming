@@ -1,3 +1,5 @@
+include "lists.h"
+
 /**
  * print_listint - print elements of list
  * @h: list to print
