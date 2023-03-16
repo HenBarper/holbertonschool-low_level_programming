@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * add_node - add node at begin
+ * add_nodeint - add node at begin
  * @head: head node
  * @n: value of int
  * Return: address of new element or null
