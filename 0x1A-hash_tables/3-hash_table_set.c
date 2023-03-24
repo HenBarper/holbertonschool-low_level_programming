@@ -23,11 +23,11 @@ void free_node(hash_node_t *node)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_node, *current;
-	int index;
+	unsigned long int index;
 
 	if (key == NULL || value == NULL)
 		return (0);
-	index = ((hash_djb2(key)) % (ht->size));
+	index = key_index((const unsigned char *)key, ht->size);
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 		return (0);
