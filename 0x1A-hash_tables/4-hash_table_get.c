@@ -11,12 +11,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
 	char *value;
+	hash_node_t *node;
 
 	if (ht == NULL || key == NULL)
 		return (NULL);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	value = ht->array[index]->value;
+	node = ht->array[index];
+	if (node == NULL)
+		return (NULL);
+	value = node->value;
 
 	return (value);
 }
