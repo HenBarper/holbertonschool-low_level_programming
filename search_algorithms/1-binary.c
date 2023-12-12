@@ -10,10 +10,9 @@
 int binary_search(int *array, size_t size, int value)
 {
 	size_t min = 0;
-	size_t max = size;
+	size_t max = size - 1;
 	size_t i = 0;
 	int midpoint = 0;
-	/*int counter = 0;*/
 
 	if (array == NULL || size == 0)
 		return (-1);
@@ -21,10 +20,8 @@ int binary_search(int *array, size_t size, int value)
     while (min <= max)
 	{
 		midpoint = (min + max) / 2; /*((max - min) / 2) + min;*/
-		printf("midpoint: %d\n", midpoint);
-		printf("Checking array index %d (%d), for %d\n", midpoint, array[midpoint], value);
 		printf("Searching in array: ");
-		for (i = min; i < max - 1; i++)
+		for (i = min; i < max; i++)
 		{
 			printf("%d, ", array[i]);
 		}
@@ -42,8 +39,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			min = midpoint + 1;
 		}
-		printf("min: %ld\n", min);
-		printf("max: %ld\n", max);
 	}
 	return (-1);
 }
